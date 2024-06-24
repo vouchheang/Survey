@@ -19,7 +19,8 @@
         <h1>WMAD Survey Form 2024</h1>
       </div>
       <form id="form">
-      <div class="section-0">
+
+      <section class="section-0">
         <div class="Box-1">
           <div class="mb-3">
             <label for="text" class="form-label"
@@ -109,18 +110,17 @@
             </label>
           </div>
         </div>
-        <div class="Box-4">
-          <p>5.Where is your current learning place?</p>
-          <select class="form-select" aria-label="Default select example" name="current">
-            <option selected></option>
-            <option value="FSD" >FSD</option>
-            <option value="Public School" >Public School</option>
-            <option value="Private School">Private School</option>
-            <option value="Partner NGO">Partner NGO</option>
-          </select>
-        </div>
-      </div>
-      <div class="section-1">
+         <div class="Box-4">
+            <p>5.Where is your current learning place?</p>
+            <select class="form-select" id="current" aria-label="Default select example">
+              <option value="" selected></option>
+              <option value="FSD">FSD</option>
+              <option value="Public School">Public School</option>
+              <option value="Private School">Private School</option>
+              <option value="Partner NGO">Partner NGO</option>
+        </select></div>
+      </section>
+      <section class="section-1">
         <div class="Box-1-1">
           <h3>Section 1: Interest in Web Development</h3>
         </div>
@@ -279,8 +279,8 @@
             <input type="text" id="other_specify"  />
           </div>
         </div>
-      </div>
-      <div class="section-2">
+      </section>
+      <section class="section-2">
         <div class="Box-1-1">
           <h3>Section 2: Familiarity with Active Pedagogy</h3>
         </div>
@@ -316,339 +316,438 @@
             <input type="text" class="form" placeholder="Your answer" id="describe pedagogy"/>
           </div>
         </div>
-        <div class="Box-3">
-          <p>
-            12.Have you ever participated in a learning activity that used
-            active pedagogy (e.g., project-based learning, collaborative
-            learning, flipped classroom)?
-          </p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Yes
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2"> No </label>
-          </div>
-        </div>
-        <div class="Box-4">
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >13.If yes, please describe the activity and your
-              experience:</label
-            >
-            <input type="text" class="form" placeholder="Your answer" />
-          </div>
-        </div>
-      </div>
-      <div class="section-3">
-        <div class="Box-1-1">
-          <h3>Section 3: Learning Preferences & Environment</h3>
-        </div>
-        <div class="Box-4">
-          <p>
-            14.How do you prefer to learn new skills? (Select all that apply)
-          </p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Hands-on projects
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckChecked">
-              Group work and collaboration
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Online tutorials and courses
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckChecked">
-              Lectures and presentations
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Self-study
-            </label>
-          </div>
+       
+          
+     
 
-          <div class="form-check">
-            <input type="checkbox" name="other" class="form-check-input" style="margin-top: 10px ;"/>
-            <label for="other">Other (please specify):</label>
-            <input type="text" name="other_specify" />
+        
+          <div class="Box-3">
+            <p>
+              12.Have you ever participated in a learning activity that used
+              active pedagogy (e.g., project-based learning, collaborative
+              learning, flipped classroom)?
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="participated"
+                value="Yes"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="participated"
+                value="No"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                No
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="Box-3">
-          <p>
-            15.What type of learning environment do you find most effective?
-          </p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Classroom setting
-            </label>
+          <div class="Box-4">
+            <div class="mb-3">
+              <label for="text" class="form-label"
+                >13.If yes, please describe the activity and your
+                experience:</label
+              >
+              <input
+                type="text"
+                class="form"
+                placeholder="Your answer"
+                id="experience"
+              />
+            </div>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Online learning
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Blended learning (a mix of online and in-person)
-            </label>
-          </div>
+        </section>
 
-          <div class="form-check">
-            <input type="radio" name="other" class="form-check-input" style="margin-top: 10px ;" />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Other (please specify):</label
-            >
-            <input type="text" name="other_specify" />
+        <section class="section-3">
+          <div class="Box-1-1">
+            <h3>Section 3: Learning Preferences & Environment</h3>
           </div>
-        </div>
-        <div class="Box-3">
-          <p>16.How important is peer interaction in your learning process?</p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Very Important
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Important Neutral
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Neutral
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Not Important
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Not at all Important
-            </label>
-          </div>
-        </div>
-        <div class="Box-3">
-          <p>
-            17.How do you feel about receiving feedback and support from
-            instructors during your learning process?
-          </p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Very Comfortable
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Comfortable
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Neutral
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Uncomfortable
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              style="margin-top: 5px ;"
-            />
-            <label class="form-check-label" for="flexRadioDefault2">
-              Very Uncomfortable
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="section-4">
-        <div class="Box-1-1">
-          <h3>Section 4: Expectations and Goals</h3>
-        </div>
-        <div class="Box-4">
-          <p>
-            18.What do you hope to achieve by learning web development? (Select
-            all that apply)
-          </p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Gain basic knowledge and skills
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckChecked">
-              Develop advanced skills for career opportunities
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Build personal projects and portfolios
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="flexCheckChecked">
-              Prepare for further education in computer science
-            </label>
-          </div>
+          <div class="Box-4">
+            <p>
+              14.How do you prefer to learn new skills? (Select all that apply)
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Hands-on projects"
+                name="prefer"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Hands-on projects
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Group work and collaboration"
+                name="prefer"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Group work and collaboration
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=" Online tutorials and courses"
+                name="prefer"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Online tutorials and courses
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Lectures and presentations"
+                name="prefer"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Lectures and presentations
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Self-study"
+                name="prefer"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Self-study
+              </label>
+            </div>
 
-          <div class="form-check">
-            <input type="checkbox" name="other" class="form-check-input" style="margin-top: 10px ;"/>
-            <label for="other">Other (please specify):</label>
-            <input type="text" name="other_specify" />
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="prefer"
+                class="form-check-input"
+                value="other"
+                style="margin-top: 10px"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Other (please specify):</label
+              >
+              <input type="text" id="prefer" />
+            </div>
           </div>
-        </div>
-        <div class="Box-4">
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >19.How do you think web development skills will help you in your
-              future career or studies?</label
-            >
-            <input type="text" class="form" placeholder="Your answer" />
+          <div class="Box-3">
+            <p>
+              15.What type of learning environment do you find most effective?
+            </p>
+            <div class="form-check">
+              <input
+                value="Classroom setting"
+                class="form-check-input"
+                type="radio"
+                name="effective"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Classroom setting
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value=" Online learning"
+                class="form-check-input"
+                type="radio"
+                name="effective"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Online learning
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value=" Blended learning (a mix of online and in-person)"
+                class="form-check-input"
+                type="radio"
+                name="effective"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Blended learning (a mix of online and in-person)
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                type="radio"
+                name="effective"
+                class="form-check-input"
+                style="margin-top: 10px"
+                value="other"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Other (please specify):</label
+              >
+              <input type="text" id="effective" />
+            </div>
           </div>
-        </div>
-        <div class="Box-4">
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >20.Are there any specific topics or technologies you would like
-              to learn in web development training?</label
-            >
-            <input type="text" class="form" placeholder="Your answer" />
+          <div class="Box-3">
+            <p>
+              16.How important is peer interaction in your learning process?
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="peer"
+                value="Very Important"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Very Important
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Important Neutral"
+                class="form-check-input"
+                type="radio"
+                name="peer"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Important Neutral
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Neutral"
+                class="form-check-input"
+                type="radio"
+                name="peer"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Neutral
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Not Important"
+                class="form-check-input"
+                type="radio"
+                name="peer"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Not Important
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Not at all Important"
+                class="form-check-input"
+                type="radio"
+                name="peer"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Not at all Important
+              </label>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="section-5">
-        <div class="Box-1-1">
-          <h3>Section 5: Feedback and Suggestions</h3>
-        </div>
-        <div class="Box-4">
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >21.Do you have any suggestions for how the web development
-              training could be improved to better suit your needs and
-              interests?</label
-            >
-            <input type="text" class="form" placeholder="Your answer" />
+          <div class="Box-3">
+            <p>
+              17.How do you feel about receiving feedback and support from
+              instructors during your learning process?
+            </p>
+            <div class="form-check">
+              <input
+                value="Very Comfortable"
+                class="form-check-input"
+                type="radio"
+                name="feel"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Very Comfortable
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Comfortable"
+                class="form-check-input"
+                type="radio"
+                name="feel"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Comfortable
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Neutral"
+                class="form-check-input"
+                type="radio"
+                name="feel"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Neutral
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Uncomfortable"
+                class="form-check-input"
+                type="radio"
+                name="feel"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Uncomfortable
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                value="Very Uncomfortable"
+                class="form-check-input"
+                type="radio"
+                name="feel"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Very Uncomfortable
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="Box-4">
-          <div class="mb-3">
-            <label for="text" class="form-label"
-              >22.Is there anything else you would like to share about your
-              interest in web development or your learning preferences?</label
-            >
-            <input type="text" class="form" placeholder="Your answer" />
+        </section>
+
+        <section class="section-4">
+          <div class="Box-1-1">
+            <h3>Section 4: Expectations and Goals</h3>
           </div>
-        </div>
-        <button type="submit"
-          class="btn"
-          style="
-            background-color: rgb(92, 12, 167);
-            color: white;
-            margin-left: 195px;
-            margin-top: 20px;
-            font-size: 24px;
-          "
-        >
-          Submit
-        </button>
-        <h6 style="font-size: 24px; margin-left: 980px; margin-top: -55px">
-          Clear Form
-        </h6>
-      </div>
-    </form>
+          <div class="Box-4">
+            <p>
+              18.What do you hope to achieve by learning web development?
+              (Select all that apply)
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Gain basic knowledge and skills"
+                name="achieve"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Gain basic knowledge and skills
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Develop advanced skills for career opportunities"
+                name="achieve"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Develop advanced skills for career opportunities
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Build personal projects and portfolios"
+                name="achieve"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Build personal projects and portfolios
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Prepare for further education in computer science"
+                name="achieve"
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Prepare for further education in computer science
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="achieve"
+                class="form-check-input"
+                value="other"
+                style="margin-top: 10px"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Other (please specify):</label
+              >
+              <input type="text" id="achieve" />
+            </div>
+          </div>
+          <div class="Box-4">
+            <div class="mb-3">
+              <label for="text" class="form-label"
+                >19.How do you think web development skills will help you in
+                your future career or studies?</label
+              >
+              <input type="text" class="form" placeholder="Your answer" id="career"/>
+            </div>
+          </div>
+          <div class="Box-4">
+            <div class="mb-3">
+              <label for="text" class="form-label"
+                >20.Are there any specific topics or technologies you would like
+                to learn in web development training?</label
+              >
+              <input type="text" class="form" placeholder="Your answer" id="technologies"/>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-5">
+          <div class="Box-1-1">
+            <h3>Section 5: Feedback and Suggestions</h3>
+          </div>
+          <div class="Box-4">
+            <div class="mb-3">
+              <label for="text" class="form-label"
+                >21.Do you have any suggestions for how the web development
+                training could be improved to better suit your needs and
+                interests?</label
+              >
+              <input type="text" class="form" placeholder="Your answer" id="suggestions"/>
+            </div>
+          </div>
+          <div class="Box-4">
+            <div class="mb-3">
+              <label for="text" class="form-label"
+                >22.Is there anything else you would like to share about your
+                interest in web development or your learning preferences?</label
+              >
+              <input type="text" class="form" placeholder="Your answer" id="preferences"/>
+            </div>
+          </div>
+          <button
+            class="btn"
+            style="
+              background-color: rgb(92, 12, 167);
+              color: white;
+              margin-left: 195px;
+              margin-top: 20px;
+              font-size: 24px;
+            "
+          >
+            Submit
+          </button>
+          <h6 style="font-size: 24px; margin-left: 980px; margin-top: -55px">
+            Clear Form
+          </h6>
+        </section>
+      </form>
+        
     </div>
 
     <script
@@ -659,5 +758,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
