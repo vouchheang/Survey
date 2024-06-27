@@ -27,7 +27,7 @@
             >
             <input type="text" class="form" placeholder="Enter your fullname" id="fullname" />
           </div>
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <label for="text" class="form-label">2.Your age?</label>
             <input
               id="age"
@@ -36,12 +36,12 @@
               class="form"
               placeholder="Enter your age"
             />
-          </div>
+          </div> -->
         </div>
         <div class="Box-2">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >3.What is your email address?</label
+              >2.What is your email address?</label
             >
             <input
               type="text"
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="Box-3">
-          <p>4.What is your current grade level?</p>
+          <p>3.What is your current grade level?</p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -110,9 +110,9 @@
           </div>
         </div>
         <div class="Box-4">
-          <p>5.Where is your current learning place?</p>
-          <select class="form-select" aria-label="Default select example" name="current">
-            <option selected></option>
+          <p>4.Where is your current learning place?</p>
+          <select class="form-select" aria-label="Default select example" id ="current">
+            <option value="" selected></option>
             <option value="FSD" >FSD</option>
             <option value="Public School" >Public School</option>
             <option value="Private School">Private School</option>
@@ -125,7 +125,7 @@
           <h3>Section 1: Interest in Web Development</h3>
         </div>
         <div class="Box-3">
-          <p>6.How interested are you in learning web development?</p>
+          <p>5.How interested are you in learning web development?</p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -183,7 +183,7 @@
           </div>
         </div>
         <div class="Box-3">
-          <p>7.Have you had any previous experience with web development?</p>
+          <p>6.Have you had any previous experience with web development?</p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -209,7 +209,7 @@
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >8.If yes, please describe your experience (e.g., self-taught,
+              >7.If yes, please describe your experience (e.g., self-taught,
               school projects, online courses, etc.)</label
             >
             <input type="text" class="form" placeholder="Your answer" id="describe"/>
@@ -217,7 +217,7 @@
         </div>
         <div class="Box-4">
           <p>
-            9.Which aspects of web development interest you the most? (Select
+            8.Which aspects of web development interest you the most? (Select
             all that apply)
           </p>
           <div class="form-check">
@@ -225,7 +225,7 @@
               class="form-check-input"
               type="checkbox"
               value=" Front-end Development (HTML, CSS, JavaScript)"
-              name="aspects"
+              name="aspect"
             />
             <label class="form-check-label" for="flexCheckDefault">
               Front-end Development (HTML, CSS, JavaScript)
@@ -236,7 +236,7 @@
               class="form-check-input"
               type="checkbox"
               value="Back-end Development (Server-side programming, databases)"
-              name="aspects"
+              name="aspect"
               
             />
             <label class="form-check-label" for="flexCheckChecked">
@@ -244,25 +244,25 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value=" Full-stack Development" name="aspects"/>
+            <input class="form-check-input" type="checkbox" value=" Full-stack Development" name="aspect"/>
             <label class="form-check-label" for="flexCheckDefault">
               Full-stack Development
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value=" Mobile Application Development" name="aspects"/>
+            <input class="form-check-input" type="checkbox" value=" Mobile Application Development" name="aspect"/>
             <label class="form-check-label" for="flexCheckChecked">
               Mobile Application Development
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Web Design" name="aspects"/>
+            <input class="form-check-input" type="checkbox" value="Web Design" name="aspect"/>
             <label class="form-check-label" for="flexCheckDefault">
               Web Design
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="User Experience (UX)" name="aspects"/>
+            <input class="form-check-input" type="checkbox" value="User Experience (UX)" name="aspect"/>
             <label class="form-check-label" for="flexCheckChecked">
               User Experience (UX)
             </label>
@@ -270,7 +270,7 @@
           <div class="form-check">
             <input
               type="checkbox"
-              name="aspects"
+              name="aspect"
               value="other"
               class="form-check-input"
               style="margin-top: 10px ;"
@@ -285,7 +285,7 @@
           <h3>Section 2: Familiarity with Active Pedagogy</h3>
         </div>
         <div class="Box-3">
-          <p>10.Are you familiar with the concept of active pedagogy?</p>
+          <p>9.Are you familiar with the concept of active pedagogy?</p>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -310,15 +310,15 @@
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >11.If yes, how would you describe your understanding of active
+              >10.If yes, how would you describe your understanding of active
               pedagogy?</label
             >
-            <input type="text" class="form" placeholder="Your answer" id="describe pedagogy"/>
+            <input type="text" class="form" placeholder="Your answer" id="describePedagogy"/>
           </div>
         </div>
         <div class="Box-3">
           <p>
-            12.Have you ever participated in a learning activity that used
+            11.Have you ever participated in a learning activity that used
             active pedagogy (e.g., project-based learning, collaborative
             learning, flipped classroom)?
           </p>
@@ -326,7 +326,9 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="participated"
+              value="Yes"
+
             />
             <label class="form-check-label" for="flexRadioDefault1">
               Yes
@@ -336,7 +338,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="participated"
+              value="No"
             />
             <label class="form-check-label" for="flexRadioDefault2"> No </label>
           </div>
@@ -344,10 +347,10 @@
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >13.If yes, please describe the activity and your
+              >12.If yes, please describe the activity and your
               experience:</label
             >
-            <input type="text" class="form" placeholder="Your answer" />
+            <input type="text" class="form" placeholder="Your answer" id="activity"/>
           </div>
         </div>
       </div>
@@ -357,34 +360,34 @@
         </div>
         <div class="Box-4">
           <p>
-            14.How do you prefer to learn new skills? (Select all that apply)
+            13.How do you prefer to learn new skills? (Select all that apply)
           </p>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="prefer" value="Hands-on projects" />
             <label class="form-check-label" for="flexCheckDefault">
               Hands-on projects
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="prefer" value="Group work and collaboration" />
             <label class="form-check-label" for="flexCheckChecked">
               Group work and collaboration
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="prefer" value=" Online tutorials and courses" />
             <label class="form-check-label" for="flexCheckDefault">
               Online tutorials and courses
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="prefer" value=" Lectures and presentations" />
             <label class="form-check-label" for="flexCheckChecked">
               Lectures and presentations
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="prefer" value="Self-study" />
             <label class="form-check-label" for="flexCheckDefault">
               Self-study
             </label>
@@ -398,13 +401,14 @@
         </div>
         <div class="Box-3">
           <p>
-            15.What type of learning environment do you find most effective?
+            14.What type of learning environment do you find most effective?
           </p>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="environment"
+              value="Classroom setting"
             />
             <label class="form-check-label" for="flexRadioDefault1">
               Classroom setting
@@ -414,7 +418,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="environment"
+              value=" Online learning"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Online learning
@@ -424,7 +429,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="environment"
+              value="Blended learning (a mix of online and in-person)"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Blended learning (a mix of online and in-person)
@@ -440,22 +446,24 @@
           </div>
         </div>
         <div class="Box-3">
-          <p>16.How important is peer interaction in your learning process?</p>
+          <p>15.How important is peer interaction in your learning process?</p>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="peer"
+              value="  Very important"
             />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Very Important
+            <label  class="form-check-label" for="flexRadioDefault1">
+              Very important
             </label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="peer"
+              value=" Important Neutral"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Important Neutral
@@ -465,7 +473,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="peer"
+              value="  Neutral"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Neutral
@@ -475,7 +484,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="peer"
+              value=" Not Important"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Not Important
@@ -485,7 +495,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="peer"
+              value=" Not at all Important"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Not at all Important
@@ -494,14 +505,15 @@
         </div>
         <div class="Box-3">
           <p>
-            17.How do you feel about receiving feedback and support from
+            16.How do you feel about receiving feedback and support from
             instructors during your learning process?
           </p>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="receiving"
+              value="Very Comfortable"
             />
             <label class="form-check-label" for="flexRadioDefault1">
               Very Comfortable
@@ -511,7 +523,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="receiving"
+              value="Comfortable"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Comfortable
@@ -521,7 +534,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="receiving"
+              value=" Neutral"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Neutral
@@ -531,7 +545,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="receiving"
+              value=" Uncomfortable"
             />
             <label class="form-check-label" for="flexRadioDefault2">
               Uncomfortable
@@ -541,7 +556,8 @@
             <input
               class="form-check-input"
               type="radio"
-              name="flexRadioDefault"
+              name="receiving"
+              value="Very Uncomfortable"
               style="margin-top: 5px ;"
             />
             <label class="form-check-label" for="flexRadioDefault2">
@@ -556,29 +572,29 @@
         </div>
         <div class="Box-4">
           <p>
-            18.What do you hope to achieve by learning web development? (Select
+            17.What do you hope to achieve by learning web development? (Select
             all that apply)
           </p>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="achieve" value="Gain basic knowledge and skills" />
             <label class="form-check-label" for="flexCheckDefault">
               Gain basic knowledge and skills
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="achieve" value="Develop advanced skills for career opportunities" />
             <label class="form-check-label" for="flexCheckChecked">
               Develop advanced skills for career opportunities
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="achieve" value="Build personal projects and portfolios" />
             <label class="form-check-label" for="flexCheckDefault">
               Build personal projects and portfolios
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input class="form-check-input" type="checkbox" name="achieve" value="Prepare for further education in computer science" />
             <label class="form-check-label" for="flexCheckChecked">
               Prepare for further education in computer science
             </label>
@@ -593,19 +609,19 @@
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >19.How do you think web development skills will help you in your
+              >18.How do you think web development skills will help you in your
               future career or studies?</label
             >
-            <input type="text" class="form" placeholder="Your answer" />
+            <input type="text" class="form" placeholder="Your answer" id="futureCareer" />
           </div>
         </div>
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >20.Are there any specific topics or technologies you would like
+              >19.Are there any specific topics or technologies you would like
               to learn in web development training?</label
             >
-            <input type="text" class="form" placeholder="Your answer" />
+            <input type="text" class="form" placeholder="Your answer" id="specific" />
           </div>
         </div>
       </div>
@@ -616,20 +632,20 @@
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >21.Do you have any suggestions for how the web development
+              >20.Do you have any suggestions for how the web development
               training could be improved to better suit your needs and
               interests?</label
             >
-            <input type="text" class="form" placeholder="Your answer" />
+            <input type="text" class="form" placeholder="Your answer" id="suggestion" />
           </div>
         </div>
         <div class="Box-4">
           <div class="mb-3">
             <label for="text" class="form-label"
-              >22.Is there anything else you would like to share about your
+              >21.Is there anything else you would like to share about your
               interest in web development or your learning preferences?</label
             >
-            <input type="text" class="form" placeholder="Your answer" />
+            <input type="text" class="form" placeholder="Your answer"  id="preference"/>
           </div>
         </div>
         <button type="submit"
