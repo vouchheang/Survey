@@ -5,18 +5,19 @@
 .container{
     height: auto;
     background-color: #DFE0FF;
-    padding-bottom: 20px;
+    padding-bottom: 4.5%;
     padding-top: 20px;
 
 }
 .dashboardbox{
     width: 43%;
     margin: auto;
+    margin-top: 4.1%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     height: auto;
     padding-bottom: 15px;
-    box-shadow: rgb(205, 205, 205) 3px 3px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .dashboardbox img{
     width: 100%;
@@ -62,18 +63,19 @@ margin-bottom: 5%;
     border-radius: 1px;
     
 }
-table{
-    width: 90%;
-    height: auto;
-    margin: auto;
-    font-size: 20px;
-    border-collapse: collapse;
+
+.table1{
+    display: flex;
+    padding-bottom: 10px;
+    
+
 }
-td{
+.grade{
+    width: 47.3%;
+    border-radius: 5px;
+    margin-left: 39px;
+    height: 40px;
     border: 1px solid black;
-    padding: 15px;
-    width: 50%;
-}
-.table2{
-    margin-top: 5%;
+    text-align: center;
+    padding: 20px;
 }

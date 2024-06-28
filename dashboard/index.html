@@ -14,71 +14,39 @@
       <div class="dashboardbox">
         <img src="../img/cv cut.jpg" alt="" />
         <h1>WMAD Survey Form 2023</h1>
-        <div class="twinbox">
-          <div class="child1">
-            <p>Number of responses</p>
-            <div class="num" style="margin-top: 14%">30</div>
-          </div>
-          <div class="child2">
-            <p>Students with previous experiances <br />in web development</p>
-            <div class="num">16</div>
-          </div>
+        <div class="twinbox" id="twin">
+
+
+
         </div>
-       <div class="table1">
-        <table>
-          <tr>
-            <td style="text-align: center;">What is your current group</td>
-            <td style="text-align: center;">Count of no</td>
-          </tr>
-          <tr>
-            <td>
-              <p>Grade 10</p>
-              <p>Grade 11</p>
-              <p>Grade 12(failed)</p>
-              <p>Grade 12(passed)</p>
-              <p>Grade 9</p>
-            </td>
-            <td>
-            <p>7</p>
-            <p>7</p>
-            <p>4</p>
-            <p>5</p>
-            <p>7</p></td>
-          </tr>
-          <tr>
-            <td>Total Result</td>
-            <td>30</td>
-          </tr>
-        </table>
-      </div>
-      <div class="table2">
-        <table>
-            <tr>
-              <td style="text-align: center;">What is your current group</td>
-              <td style="text-align: center;">Count of no</td>
-            </tr>
-            <tr>
-              <td>
-                <p>FSD</p>
-                <p>Partner NGO</p>
-                <p>Private School</p>
-                <p>Public School</p>
-              </td>
-              <td>
-              <p>20</p>
-              <p>3</p>
-              <p>3</p>
-              <p>4</p></td>
-            </tr>
-            <tr>
-              <td>Total Result</td>
-              <td>30</td>
-            </tr>
-          </table>
+        <div class="table1">
+            <select style="width:38%; height:65px;margin-left:39px;font-size: 20px; border-radius: 5px;" onchange="Grade()" id="mySelect">
+                <option selected disabled hidden value="" >What is your current group?</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12(failed)">Grade 12(failed)</option>
+                <option value="Grade 12(passed)">Grade 12(passed)</option>
+               </select>
+               <div class="grade" style="height: 65px;" id="myGrade">
+              </div> 
         </div>
+        <div class="table1">
+          <select style="width:38%; height:65px;margin-left:39px;font-size: 20px; border-radius: 5px;" onchange="School()" id="school" >
+              <option selected disabled hidden value="" >Where is your current learning place?</option>
+              <option value="FSD">FSD</option>
+              <option value="Public School">Public School</option>
+              <option value="Private School">Private School</option>
+              <option value="Partner NGO">Partner NGO</option>
+             </select>
+             <div class="grade" style="height: 65px;" id="myGrade1">
+            </div> 
       </div>
+
+      </div>
+         <div id="getApi"></div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
